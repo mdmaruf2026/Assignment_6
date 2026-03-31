@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-
+import { toast } from "react-toastify";
 const ModelCard = ({ model, carts, setCarts }) => {
     const [isBought, setIsBought] = useState(false);
+    const notify = () => toast("Cart added successfully");
 
     const handleBuying = () => {
         setIsBought(true)
         setCarts([...carts, model])
+    notify()
 
     }
     return (

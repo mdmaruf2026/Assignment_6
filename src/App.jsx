@@ -10,6 +10,9 @@ import { useState } from 'react';
 import StatsSection from './component/StatsSection';
 import StepSection from './component/StepSection';
 import Pricing from './component/Pricing';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const getModels = async () => {
   const res = await fetch("/models.json")
@@ -27,6 +30,7 @@ function App() {
   const removeFromCart = (id) => {
     const updatedCart = carts.filter(item => item.id !== id);
     setCarts(updatedCart);
+    toast.error("Item removed from cart!");
   }
 
   console.log("Current Tab:", activeTab);
@@ -38,9 +42,9 @@ function App() {
       <Banner />
 
       
-      <div className="text-center mt-12 mb-6">
-        <h2 className="text-5xl font-bold">Premium Digital Tools</h2>
-        <p>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
+      <div className="text-center mt-12 mb-4">
+        <h2 className="text-5xl font-bold pb-6">Premium Digital Tools</h2>
+        <p className='pb-2'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
       </div>
 
       {/* name of each tab group should be unique */}
@@ -70,6 +74,7 @@ function App() {
       <StepSection />
        <Pricing/> 
       <Footer />
+      <ToastContainer />
     </>
   )
 }

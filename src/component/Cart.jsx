@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Cart = ({carts = [], setCarts, removeFromCart}) => {
 
@@ -10,6 +11,7 @@ const Cart = ({carts = [], setCarts, removeFromCart}) => {
 
     const handlePayment = () => {
         setCarts([])
+        toast.success("Checkout successfully done!");
     }
     return(
         <div className="p-10">
@@ -52,7 +54,7 @@ const Cart = ({carts = [], setCarts, removeFromCart}) => {
                     <div className=" flex gap-50">
                             {/* Product prices */}
                         <div className="text-3xl font-bold ">
-                            ${item.price}/month
+                            ${item.price}
                         </div>
                     
                     {/* Delete Button with item ID */}
