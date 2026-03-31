@@ -57,15 +57,15 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-5 text-[15px]">Social Links</h3>
             <div className="flex gap-4">
               {/* Instagram */}
-              <a href="#" className="w-9 h-9 flex items-center justify-center bg-white rounded-full text-black hover:bg-gray-200 transition">
+              <a href="#" className="w-10 h-10 bg-white hover:bg-gray-200 transition-colors rounded-full flex items-center justify-center text-[#1E293B] text-xl cursor-pointer">
                 <i className="fa-brands fa-instagram text-base"></i>
               </a>
               {/* Facebook */}
-              <a href="#" className="w-9 h-9 flex items-center justify-center bg-white rounded-full text-black hover:bg-gray-200 transition">
+              <a href="#" className="w-10 h-10 bg-white hover:bg-gray-200 transition-colors rounded-full flex items-center justify-center text-[#1E293B] text-xl cursor-pointer">
                 <i className="fa-brands fa-facebook-f text-base"></i>
               </a>
               {/* X (Twitter) */}
-              <a href="#" className="w-9 h-9 flex items-center justify-center bg-white rounded-full text-black hover:bg-gray-200 transition">
+              <a href="#" className="w-10 h-10 bg-white hover:bg-gray-200 transition-colors rounded-full flex items-center justify-center text-[#1E293B] text-xl cursor-pointer">
                 <i className="fa-brands fa-x-twitter text-base"></i>
               </a>
 

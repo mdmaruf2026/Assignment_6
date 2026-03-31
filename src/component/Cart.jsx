@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cart = ({carts = [], removeFromCart}) => {
+const Cart = ({carts = [], setCarts, removeFromCart}) => {
 
     // Safe check
     const safeCarts = Array.isArray(carts) ? carts : [];
@@ -8,7 +8,9 @@ const Cart = ({carts = [], removeFromCart}) => {
     // Calculate total price in cart
     const totalPrice = safeCarts.reduce((sum, item) => sum + item.price,0 )
 
-
+    const handlePayment = () => {
+        setCarts([])
+    }
     return(
         <div className="p-10">
 
@@ -47,9 +49,10 @@ const Cart = ({carts = [], removeFromCart}) => {
                         </div>
                         </div>
                     
+                    <div className=" flex gap-50">
                             {/* Product prices */}
                         <div className="text-3xl font-bold ">
-                            ${item.price}
+                            ${item.price}/month
                         </div>
                     
                     {/* Delete Button with item ID */}
@@ -58,6 +61,7 @@ const Cart = ({carts = [], removeFromCart}) => {
                         className="text-red-500 hover:text-red-700 font-semibold cursor-pointer">
                         Remove
                     </button>
+                    </div>
             </div>
              ))
             )
@@ -69,6 +73,8 @@ const Cart = ({carts = [], removeFromCart}) => {
                 <div className="Total">Total Price</div>
                 <div className=""> ${ totalPrice }</div>
             </div>
+
+            <button onClick={handlePayment} className="btn w-full mt-5 bg-red-500 text-white text text-2xl rounded-lg">Proceed to Checkout</button>
         </div>
     );
 };

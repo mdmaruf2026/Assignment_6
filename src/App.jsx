@@ -6,7 +6,7 @@ import Banner from './component/Banner';
 import Footer from './component/Footer';
 import Models from './component/Models';
 import Cart from './component/Cart';
-import { act, useState } from 'react';
+import { useState } from 'react';
 import StatsSection from './component/StatsSection';
 import StepSection from './component/StepSection';
 import Pricing from './component/Pricing';
@@ -64,7 +64,7 @@ function App() {
 
       </div>
       {activeTab === "model" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts} />}
-      {activeTab === "cart" && (<Cart carts={carts} removeFromCart={removeFromCart} />)}
+      {activeTab === "cart" && (<Cart carts={carts} removeFromCart={removeFromCart} setCarts={setCarts} />)}
 
        <StatsSection />
       <StepSection />
