@@ -67,12 +67,12 @@ const Cart = ({carts = [], setCarts, removeFromCart}) => {
             </div> 
 
             {/* Total Price section in Cart */}
-            <div className="flex justify-between bg-black text-white p-5 mt-5 rounded-lg text-2xl">
+            <div className="flex justify-between bg-white text-black p-5 mt-5 rounded-lg text-2xl">
                 <div className="Total">Total Price</div>
                 <div>${totalPrice}</div> 
             </div>
 
-            <button onClick={handlePayment} className="w-full mt-5 bg-red-500 text-white text-2xl rounded-lg">Proceed to Checkout</button>
+            <button onClick={handlePayment} className="w-full mt-5 bg-purple-600 hover:bg-purple-700 text-white text-2xl font-semibold py-3 rounded-lg cursor-pointer">Proceed to Checkout</button>
         </div>
     );
 };
