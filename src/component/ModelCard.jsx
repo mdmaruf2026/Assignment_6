@@ -11,6 +11,8 @@ const ModelCard = ({ model, carts, setCarts }) => {
 
     }
     return (
+
+                // Card header part
         <div key={model.id} className="relative shadow-lg rounded-lg border overflow-hidden border-[#627382] flex flex-col justify-between bg-whites">
             {model.badge && (<span className={`absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full 
                         ${model.badge === 'Best Seller' ? 'bg-[#FEF3C7] text-[#D97706]' : ''}
@@ -20,6 +22,7 @@ const ModelCard = ({ model, carts, setCarts }) => {
                 {model.badge}
             </span>)}
 
+                {/* Card Icon Image */}
             <div className="flex justify-start items-center px-4 pt-4 pb-2">
                 <div className="w-14 h-14 bg-white border border-[#E2E8F0] rounded-full flex items-center justify-center text-2xl shadow-sm overflow-hidden">
                     <img className="h-40 w-40 object-contain" src={model.image} alt="" />
