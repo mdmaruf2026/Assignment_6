@@ -44,10 +44,10 @@ function App() {
       
       <div className="text-center mt-12 mb-4">
         <h2 className="text-5xl font-bold pb-6">Premium Digital Tools</h2>
-        <p className='pb-2'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
+        <p className='pb-2 text-[#627382] '>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
       </div>
 
-      {/* name of each tab group should be unique */}
+
       <div className="tabs tabs-box justify-center bg-transparent">
         <input
           type="radio"

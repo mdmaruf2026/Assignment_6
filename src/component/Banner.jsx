@@ -9,8 +9,8 @@ const Banner = () => {
         <div className="space-y-6">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-sm font-medium px-4 py-1.5 rounded-full">
-            <i className="fa-solid fa-circle text-[10px] text-[#7C3AED]"></i>
+          <div className="inline-flex items-center gap-2 bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-[16px] font-medium px-4 py-1.5 rounded-full">
+            <i className="fa-solid fa-circle text-[16px] text-[#7C3AED]"></i>
             New: AI-Powered Tools Available
           </div>
 
@@ -20,7 +20,7 @@ const Banner = () => {
           </h1>
 
           {/* Paragraph */}
-          <p className="text-[15px] leading-relaxed text-gray-500 max-w-lg">
+          <p className="text-[18px] leading-relaxed text-[#627382] max-w-lg">
             Access premium AI tools, design assets, templates, and productivity software—all in one place.
             Start creating faster today.
             <br />
@@ -31,12 +31,12 @@ const Banner = () => {
           <div className="flex flex-wrap gap-4 pt-2">
 
             {/* Explore Products Button */}
-            <button className="bg-[#7C3AED] hover:bg-[#6D28D9] transition-all px-8 py-3 rounded-full font-semibold text-[15px] flex items-center gap-3 text-white">
+            <button className="bg-[#7C3AED] hover:bg-[#6D28D9] transition-all px-8 py-3 rounded-full font-bold text-[16px] flex items-center gap-3 text-white">
               Explore Products
             </button>
 
             {/*Demo Button */}
-            <button className="border border-[#7C3AED] text-[#7C3AED] hover:bg-[#F5F3FF] transition-all px-8 py-3 rounded-full font-semibold text-[15px] flex items-center gap-2">
+            <button className="border border-[#7C3AED] text-[#7C3AED] hover:bg-[#F5F3FF] transition-all px-8 py-3 rounded-full font-bold text-[16px] flex items-center gap-2">
               <i className="fa-solid fa-play text-sm"></i>
               Watch Demo
             </button>

@@ -14,7 +14,7 @@ const NavBar = ({carts = []}) => {
       {/* Navigation Links */}
       <div className="navbar-center hidden lg:flex">
 
-        <ul className="menu menu-horizontal gap-6 px-1 text-[15px] font-medium text-gray-600">
+        <ul className="menu menu-horizontal gap-6 px-1 text-[16px] font-semibold text-[#101727]">
           <li className="hover:text-gray-900 transition-colors">
             <a href="#">Products</a>
           </li>
@@ -49,12 +49,12 @@ const NavBar = ({carts = []}) => {
         </button>
 
         {/* Login */}
-        <button className="text-[15px] font-medium text-gray-700 hover:text-gray-900">
+        <button className="text-[16px] font-semibold text-[#101727] hover:text-gray-900">
           Login
         </button>
 
         {/* Action Button */}
-        <button className=" btn bg-[#7C3AED] hover:bg-[#6D28D9] border-none text-white px-6 rounded-full font-medium normal-case">
+        <button className="text-semibold text-[16px] btn bg-[#7C3AED] hover:bg-[#6D28D9] border-none text-white px-6 rounded-full font-medium normal-case">
           Get Started
         </button>
       </div>

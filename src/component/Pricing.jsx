@@ -55,7 +55,7 @@ const Pricing = () => {
                 </div>
 
 
-                {/* Card 2: Pro Plan (The Purple One) */}
+                {/* Card 2: Pro Plan */}
                 <div className="bg-[#7C3AED] text-white rounded-2xl p-8 flex-1 flex flex-col justify-between shadow-lg relative transform md:scale-105">
 
                     {/* Most Popular Badge */}
