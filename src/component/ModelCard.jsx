@@ -35,7 +35,7 @@ const ModelCard = ({ model, carts, setCarts }) => {
                 <p>{model.description}</p>
 
                 {/* Card-Price/month */}
-            <div className="lex items-baseline gap-1 mt-1 text-black px-4 mb-4">
+            <div className="lex items-baseline gap-1 mt-4 text-black px-4 pl-0  mb-4">
                 <span className="text-2xl font-bold">${model.price}</span>
                 <span className="text-gray-500 text-sm">{model.price_type}</span>
             </div>
